@@ -21,4 +21,29 @@ Rust로 개발되었으며, 집중과 휴식을 라운드별로 반복하며 생
 ### 실행
 
 ```bash
-cargo run -- --focus 25 --rest 5 --rounds 4
+cargo run -- --focus 25 --breaktime 5 --rounds 4
+```
+
+### 또는 설치 후 사용:
+```bash
+cargo install --path .
+pomorust --focus 25 --breaktime 5 --rounds 4
+```
+
+## 옵션
+| 옵션            | 설명               | 기본값 |
+|-----------------|--------------------|--------|
+| `--focus` | 집중 시간 (분)     | `25`   |
+| `--breaktime`  | 쉬는 시간 (분)     | `5`    |
+| `--rounds`| 반복 라운드 수     | `1`    |
+
+# 🔧 설치 방법
+```bash
+git clone https://github.com/Leehomin11/rust_cli.git
+cd rust_cli
+cargo build --release
+```
+또는 글로벌 설치:
+```bash
+cargo install --path .
+```
